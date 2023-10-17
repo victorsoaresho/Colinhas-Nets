@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+:root {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#Menu {
+    /* Utilize display: flex para distribuir os botões horizontalmente */
+    display: flex;
+    flex-direction: row; /* Coluna para alinhar verticalmente */
+    align-items: center; /* Alinhe os itens horizontalmente no centro */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.tabpgdespacho,
+.tabnovocancel,
+.tabatrasoMLE,
+.tabinconmle,
+.tabatrasoMKT,
+.tabTroca,
+.tabdvg,
+.tabinconmkt {
+    /* Estilos básicos para os botões */
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: 100%; /* Ocupar toda a largura do contêiner */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.tabpgdespacho {
+    padding: 15px 20px;
+}
+.tabpgdespacho:hover {
+    background-color: #06d6a0;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.pgdespacho {
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    align-items: center; /* Alinhe os itens horizontalmente no centro */
+    position: fixed flex start;
+    width: 1000px; /* Defina o valor máximo para evitar que a largura fique muito grande */
+    margin: 5px;
+    padding: 20px; /* Adicione margem para espaçamento */
+    text-align: center;
+    background-color: #06d6a0;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    height: 60px; /* Altura fixa para os botões */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.pgdespacho:hover {
+    background-color: #047e5d;
+    transition: 0.2s;
+}
+.tabnovocancel {
+    padding: 7px 20px;
+}
+.novocancel {
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    align-items: center; /* Alinhe os itens horizontalmente no centro */
+    position: fixed flex start;
+    width: 1000px; /* Defina o valor máximo para evitar que a largura fique muito grande */
+    margin: 5px;
+    padding: 20px; /* Adicione margem para espaçamento */
+    text-align: center;
+    background-color: #ca8e00;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    height: 60px; /* Altura fixa para os botões */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.novocancel:hover {
+    background-color: #6e4d00;
+    transition: 0.2s;
+}
+
+.tabnovocancel:hover {
+    background-color: #ca8e00;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.tabatrasoMLE {
+    padding: 25px 20px;
+}
+.atrasoMLE {
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    align-items: center; /* Alinhe os itens horizontalmente no centro */
+    position: fixed flex start;
+    top: 108px;
+    width: 1000px; /* Defina o valor máximo para evitar que a largura fique muito grande */
+    margin: 5px;
+    padding: 17px; /* Adicione margem para espaçamento */
+    text-align: center;
+    background-color: #ef476f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    height: 50px; /* Altura fixa para os botões */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.atrasoMLE:hover {
+    background-color: #a51738;
+    transition: 0.2s;
+}
+.tabatrasoMLE:hover {
+    background-color: #ef476f;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.tabinconmle {
+    padding: 16px 20px;
+}
+.tabinconmle:hover {
+    background-color: #137a9c;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.inconmle {
+    display: flex;
+    top: 33px;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    align-items: center; /* Alinhe os itens horizontalmente no centro */
+    position: fixed flex start;
+    width: 1000px; /* Defina o valor máximo para evitar que a largura fique muito grande */
+    margin: 5px;
+    padding: 20px; /* Adicione margem para espaçamento */
+    text-align: center;
+    background-color: #137a9c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    height: 60px; /* Altura fixa para os botões */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.inconmle:hover {
+    background-color: #014b64;
+    transition: 0.2s;
+}
+.tabatrasoMKT {
+    padding: 25px 20px;
+}
+.tabatrasoMKT:hover {
+    background-color: #005470;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.atrasomtk {
+    display: flex;
+    top: 33px;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    align-items: center; /* Alinhe os itens horizontalmente no centro */
+    position: fixed flex start;
+    width: 1000px; /* Defina o valor máximo para evitar que a largura fique muito grande */
+    margin: 5px;
+    padding: 20px; /* Adicione margem para espaçamento */
+    text-align: center;
+    background-color: rgb(0, 162, 211);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    height: 60px; /* Altura fixa para os botões */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.atrasomtk:hover {
+    background-color: #005470;
+    transition: 0.2s;
+}
+.tabTroca {
+    padding: 25px 20px;
+}
+.Troca {
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    align-items: center; /* Alinhe os itens horizontalmente no centro */
+    position: fixed flex start;
+    width: 1000px; /* Defina o valor máximo para evitar que a largura fique muito grande */
+    margin: 5px;
+    padding: 20px; /* Adicione margem para espaçamento */
+    text-align: center;
+    background-color: #9e0059;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    height: 60px; /* Altura fixa para os botões */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.Troca:hover {
+    background-color: #53002f;
+    transition: 0.2s;
+}
+.tabTroca:hover {
+    background-color: #9e0059;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.tabdvg {
+    padding: 25px 20px;
+}
+.tabdvg:hover {
+    background-color: #ff0054;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.dvg {
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    align-items: center; /* Alinhe os itens horizontalmente no centro */
+    position: fixed flex start;
+    width: 1000px; /* Defina o valor máximo para evitar que a largura fique muito grande */
+    margin: 5px;
+    padding: 20px; /* Adicione margem para espaçamento */
+    text-align: center;
+    background-color: #ff0054;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    height: 60px; /* Altura fixa para os botões */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.dvg:hover {
+    background-color: #990033;
+    transition: 0.2s;
+}
+.tabinconmkt {
+    padding: 16px 20px;
+}
+.tabinconmkt:hover {
+    background-color: #390099;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.inconmkt {
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar verticalmente */
+    align-items: center; /* Alinhe os itens horizontalmente no centro */
+    position: fixed flex start;
+    top: 97px;
+    width: 1000px; /* Defina o valor máximo para evitar que a largura fique muito grande */
+    margin: 5px;
+    padding: 20px; /* Adicione margem para espaçamento */
+    text-align: center;
+    background-color: #390099;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+    height: 60px; /* Altura fixa para os botões */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.inconmkt:hover {
+    background-color: #200057;
+    transition: 0.2s;
+}
+.tab {
+    display: none;
+}

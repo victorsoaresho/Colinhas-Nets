@@ -1,0 +1,103 @@
+/* Importando a fonte Montserrat */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+:root {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-image: url('Imagens/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Adicionado para corrigir o posicionamento das imagens */
+    text-align: center;
+    padding-top: 100px;
+    margin: 0; /* Adicionado para remover margens padrão do body */
+    font-size: 20px;
+}
+.Formulario {
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px 0 rgba(132,146,166,.3);
+    align-self: end;
+    box-sizing: border-box;
+    display: block;
+}
+/* Corrigindo o seletor de classe do cabeçalho h1 */
+.Formulario h1 {
+    font-weight: 450; /* Alterando para light */
+    text-align: center;
+    font-size: 31px;
+}
+.Formulario p {
+    color: rgb(59, 59, 59);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.Formulario a {
+    text-decoration: none;
+    color: white;
+}
+.Formulario input {
+    width: 367px;
+    padding: 17px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.Formulario input:hover {
+    border-color: black;
+    color: black;
+}
+.Formulario button {
+    margin: 10px;
+    padding: 20px 125px; 
+    background-color: #00a2ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    top: 5px;
+    transition: 1s;
+    width: 400px;
+    text-align: center;
+}
+.Formulario p {
+    color: rgb(59, 59, 59);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.Formulario button:hover{
+    background-color: #0277bb;
+}
+footer {
+    background-color: #7209b7;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    padding: 0.5px 0;
+    color: white;
+    text-align: center;
+}
+footer p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colinhas Nets</title>
+    <link rel="shortcut icon" href="https://fotos.mtdesconto.com.br/ofertas/lista-de-ofertas-com-ate-84-de-desconto-na-netshoes_637e3c52a63e0.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Menu" class="hidden">
+        <button class="tabpgdespacho" onclick="changeTab(event, 'pgdespacho')">Pago não despachado</button>
+        <button class="tabnovocancel" onclick="changeTab(event, 'aba2')">Novo Cancelamento MKT</button>
+        <button class="tabatrasoMLE" onclick="changeTab(event, 'aba3')">Atraso MLE</button>
+        <button class="tabinconmle" onclick="changeTab(event, 'aba4')">Inconformidade MLE</button>
+        <button class="tabatrasoMKT" onclick="changeTab(event, 'aba5')">Atraso MKT</button>
+        <button class="tabTroca" onclick="changeTab(event, 'aba6')">Troca</button>
+        <button class="tabdvg" onclick="changeTab(event, 'aba7')">Divergência</button>
+        <button class="tabinconmkt" onclick="changeTab(event, 'aba8')">Inconformidade MKT</button>
+        <!-- Adicione mais botões de abas aqui, se necessário -->
+    </div>
+    <div class="tab" id="pgdespacho">
+    <button class="pgdespacho" onclick="acionarseller()">Acionar Seller</button> 
+    <button class="pgdespacho" onclick="clienteatendido()">Cliente Atendido</button>
+    <button class="pgdespacho" onclick="romaneio()">Solicitar Romaneio</button>
+    <button class="pgdespacho" onclick="despachadorecente()">Despachado Recentemente</button>
+    <button class="pgdespacho" onclick="faturadorecente()">Faturado Recentemente</button>
+    <button class="pgdespacho" onclick="noprazo()">Dentro do prazo de despacho</button>
+</div>
+
+
+
+
+  <!-- NOVO CANCELAMENTO -->
+  <div class="tab" id="aba2">
+    <button class="novocancel" onclick="prontofaturar()">Pronto Para Faturar</button>
+    <button class="novocancel" onclick="faturado()">Pedido faturado</button>
+    <button class="novocancel" onclick="despachado()">Pedido despachado</button>
+  </div>
+
+
+
+
+  <!-- ATRASO MLE -->
+
+    <div class="tab" id="aba3">
+    <button class="atrasoMLE" onclick="acionartransportadoradev()">Transportadora acionada</button>
+    <button class="atrasoMLE" onclick="acionartransportadora()">Devolução Transportadora</button>
+    <button class="atrasoMLE" onclick="cobrarcheck()">Cobrar Check-in</button>
+    <button class="atrasoMLE" onclick="clienteatendido()">Cliente Atendido</button>
+    <button class="atrasoMLE" onclick="abertopi()">Aberto PI</button>
+    <button class="atrasoMLE" onclick="confirmarentrega()">Confirmar Entrega</button>
+    <button class="atrasoMLE" onclick="rastreioatt()">Rastreio Atualizado</button>
+    <button class="atrasoMLE" onclick="rotaentrega()">Rota de entrega</button>
+    <button class="atrasoMLE" onclick="rotadevol()">Em devolução</button>
+    <button class="atrasoMLE" onclick="extravio()">Extraviado</button>
+    <button class="atrasoMLE" onclick="romaneio1()">Solicitar Romaneio</button>
+    <button class="atrasoMLE" onclick="novoprazoEntr()">Nov. Prazo de Entrega</button>
+    <button class="atrasoMLE" onclick="SemRetornTrans()">Sem retorno transportadora</button>
+  </div>
+
+
+
+
+     <!-- Inconformidade  MLE -->
+     <div class="tab" id="aba4">
+      <button class="inconmle" onclick="acareacaomle()">Solicitado Acareação</button>
+      <button class="inconmle" onclick="novaentrega()">Nova Tentativa de Entrega</button>
+      <button class="inconmle" onclick="solidevol()">Solicitar Devolução</button>
+      <button class="inconmle" onclick="rotadevol()">Em Rota de devolução</button>
+      <button class="inconmle" onclick="clienteatendido()">Cliente Atendido</button>
+      <button class="inconmle" onclick="prazoacarea()">Acareação no Prazo</button>
+      <button class="inconmle" onclick="cobrarChec()">Cobrar Check-in</button>
+      
+    </div>
+
+
+
+
+     <!-- ATRASO MKT -->
+
+     <div class="tab" id="aba5">
+      <button class="atrasomtk" onclick="pedidoentreg()">Pedido Entregue</button>
+      <button class="atrasomtk" onclick="clienteatendido()">Cliente Atendido</button>
+      <button class="atrasomtk" onclick="cobrarentrega()">Cobrar Entrega Atrasada </button>
+      <button class="atrasomtk" onclick="noprazomkt()">Entrega Dentro do Prazo </button>
+      <button class="atrasomtk" onclick="rotadevolmkt()">Rota de Devolução </button>
+      <button class="atrasomtk" onclick="tramitar()">Virar protocolo p/ Lojista</button>
+      <button class="atrasomtk" onclick="baixaindev()">Baixa Indevida</button>
+    </div>
+
+
+
+    
+    
+    <!-- TROCA -->
+
+      <div class="tab" id="aba6">
+        <button class="Troca" onclick="cobrarcheck()">Cobrar Check-in</button>
+        <button class="Troca" onclick="troca1()">Cliente atendido</button>
+        <button class="Troca" onclick="selleratendeu()">Check-in Pelo Lojista</button>
+        <button class="Troca" onclick="postagem()">Enviar Postagem</button>
+
+        
+                
+      </div>
+  
+  
+
+
+      <!-- Divergência  -->
+
+
+
+      <div class="tab" id="aba7">
+        <button class="dvg" onclick="solienvio()">Solicitar Envio</button>
+        <button class="dvg" onclick="clienteatendido()">Cliente atendido</button>
+       
+                
+      </div>
+
+
+
+
+
+        <!-- INCONFORMIDADE MKT  -->
+
+
+       <div class="tab" id="aba8">
+        <button class="inconmkt" onclick="noprazomkt1()">Entrega no Prazo</button>
+        <button class="inconmkt" onclick="confirmarentrega()">Confirmar Entrega</button>
+        <button class="inconmkt" onclick="solidevol()">Solicitar Devolução</button>
+        <button class="inconmkt" onclick="trocaentregue()">Troca Entregue</button>
+        <button class="inconmkt" onclick="clienteatendido()">Cliente Atendido</button>
+        <button class="inconmkt" onclick="semretorcli()">S/ Retorno do Cliente </button>
+        <button class="inconmkt" onclick="acareacaomkt()">Acareação</button>
+        <button class="inconmkt" onclick="dadosreceb1()">Dados Recebedor</button>
+        <button class="inconmkt" onclick="baixaindev()">Baixa Indevida</button>
+                
+       </div>
+       <script src="script2.js"></script>
+</body>
+</html>
